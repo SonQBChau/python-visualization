@@ -1,4 +1,10 @@
 from collections import Counter
+from collections import defaultdict  # import defaultdict class
+
+
+###########
+# COUNTER #
+###########
 marriage_ages = [22, 22, 25, 25, 30, 24, 26, 24, 35]  # create a list
 value_counts = Counter(marriage_ages)  # apply the counter functionality
 print(value_counts.most_common())
@@ -97,3 +103,9 @@ print(my_dict.values())
 # Return all the key, value pairs
 print("---7---")
 print(my_dict.items())
+
+
+my_default_dict = defaultdict(int)   # make a default dictionary
+my_default_dict['age'] = 22          # adding a key-value pair
+print(my_default_dict['company'])    # printing the value of the key "company"
+
