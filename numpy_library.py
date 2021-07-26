@@ -1,5 +1,9 @@
 import numpy as np
 
+#############################
+# SINGLE DIMENSIONAL ARRAYS #
+#############################
+
 # This creates our array
 np_array = np.array([5, 10, 15, 20, 25, 30])
 print("--0--")
@@ -30,3 +34,29 @@ print("--6--")
 
 # Gives you the shape: (rows, columns)
 print(np_array.shape)
+
+##########################
+# TWO DIMENSIONAL ARRAYS #
+##########################
+# Create 2d array
+print("--0--")
+np_2d_array = np.array([[1,2,3], 
+                        [4,5,6]])
+print(np_2d_array)
+
+# Calculate the transpose, which is when you swap the columns and rows.
+print("--1--")
+np_2d_array_T = np_2d_array.T
+print(np_2d_array_T)
+
+# Print the shape of the array as (number of rows, number of columns)
+print("--3--")
+print(np_2d_array.shape)
+
+# Access elements in the 2d array by index. 
+# First index is the row number
+# Second index is the column number
+# Index numbers start from 0
+print("--4--")
+print(np_2d_array[1,1])
+print(np_2d_array[0,2])
