@@ -188,3 +188,7 @@ print(my_list_sorted_abs)
 ####################
 # THE ZIP FUNCTION #
 ####################
+list_1 = [1, 2, 3]  # create your first list
+list_2 = ['x', 'y', 'z']  # create your second list
+
+print(list(zip(list_1, list_2)))  # combine and print
