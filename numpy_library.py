@@ -78,3 +78,12 @@ print(np.random.rand())
 # Generate a matrix of random numbers in range [0,1) with shape (3,2)
 print("--1--")
 print(np.random.rand(3,2))
+
+# Low=5, High=15, Size=2. Generate 2 values between 5 and 15 (exclusive)
+print("--0--")
+print(np.random.randint(5, 15, 2))
+
+# Low=5, High=15, Size=(3,2). Generate a matrix of shape (3,2) with values between 5 and 15 (exclusive)
+print("--1--")
+print(np.random.randint(5, 15, (3,2)))
+
