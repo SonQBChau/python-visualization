@@ -17,3 +17,6 @@ def add_two_numbers(x, y):  # function header
     z = x + y
     return z  # function return
 print(add_two_numbers(100,5))  # function  call
+
+y = lambda x, y: x + y  # an anonymous function which takes x and y and input and returns x+y
+print(y(100,5))  # call the function anonymous
