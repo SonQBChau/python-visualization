@@ -87,3 +87,27 @@ print(np.random.randint(5, 15, 2))
 print("--1--")
 print(np.random.randint(5, 15, (3,2)))
 
+#####################
+# SAMPLING THE DATA #
+#####################
+array = np.array([1,2,3,4,5])
+
+# Sample 10 data points with replacement. 
+print("--0--")
+print(np.random.choice(array, 10, replace=True))
+
+# Sample 3 data points without replacement. 
+# Sampling without replacement means the same value can’t be sampled more than once
+print("--1--")
+print(np.random.choice(array, 3, replace=False))
+
+#############################
+# RANDOMLY SHUFFLING VALUES #
+#############################
+x = [1,2,3,4,5]  # Create a list of 5 elements
+np.random.shuffle(x)  # Randomly shuffle the order of the elements in the list
+
+print(x)
+
+# if you want the random selections to be the same every time, you need to set a seed
+np.random.seed(42)
