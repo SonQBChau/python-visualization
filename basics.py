@@ -184,3 +184,7 @@ my_list = [2, 10, 1, -5, 22]
 my_list_sorted_abs = sorted(my_list, key=abs, reverse=True)
 
 print(my_list_sorted_abs)
+
+####################
+# THE ZIP FUNCTION #
+####################
