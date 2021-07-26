@@ -169,3 +169,18 @@ print(numbers_gt_5)
 
 nums_plus_one = [x + 1 for x in range(5)] # increment every value in a list by 1
 print(nums_plus_one)
+
+#####################
+# THE SORT FUNCTION #
+#####################
+my_list = [2, 10, 1, -5, 22]
+my_list.sort()  # sorting the list
+
+print(my_list)
+
+my_list = [2, 10, 1, -5, 22]
+
+# Sorted reversely on basis of absolute value
+my_list_sorted_abs = sorted(my_list, key=abs, reverse=True)
+
+print(my_list_sorted_abs)
