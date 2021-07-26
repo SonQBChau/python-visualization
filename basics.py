@@ -139,3 +139,17 @@ print(my_set.union(my_set2))
 # Prints the difference (those in my_set but not my_set2)
 print("---3---")
 print(my_set.difference(my_set2))
+
+#########################
+# THE IF-ELSE CONSTRUCT #
+#########################
+def age_check(age):
+
+    if age > 40:  # if age greater than 40, print "Older than 40"
+        print("Older than 40")
+    elif age > 30 and age <= 40: # if age greater than 30 and less than or equal to 40, print "Between 30 and 40"
+        print("Between 30 and 40")
+    else:  # if neither of the previous conditions are met, print "Other"
+        print("Other")
+
+print(age_check(41))
