@@ -21,6 +21,9 @@ print(add_two_numbers(100,5))  # function  call
 y = lambda x, y: x + y  # an anonymous function which takes x and y and input and returns x+y
 print(y(100,5))  # call the function anonymous
 
+###################
+# LISTS IN PYTHON #
+###################
 # This creates the list
 depths = [1, 5, 3, 6, 4, 7, 10, 12]
 
@@ -52,6 +55,9 @@ print(depths[-2:])
 print("---5---")
 print(depths[2:5])
 
+##########################
+# DICTIONARIES IN PYTHON #
+##########################
 # Initialize the dictionary.
 # Keys are first then a : then the value
 my_dict = {"age": 22, "birth_year": 1999, "name": "jack", "siblings": ["jill", "jen"]}
