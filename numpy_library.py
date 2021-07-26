@@ -60,3 +60,21 @@ print(np_2d_array.shape)
 print("--4--")
 print(np_2d_array[1,1])
 print(np_2d_array[0,2])
+
+###########################
+# CALCULATING DOT PRODUCT #
+###########################
+np_array = np.array([5, 10, 15, 20, 25, 30])
+dot_product = np.dot(np_array, np_array)
+print(dot_product)
+
+############################
+# GENERATING RANDOM VALUES #
+############################
+# Generage a single random number in range [0,1)
+print("--0--")
+print(np.random.rand())
+
+# Generate a matrix of random numbers in range [0,1) with shape (3,2)
+print("--1--")
+print(np.random.rand(3,2))
