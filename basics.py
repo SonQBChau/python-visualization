@@ -2,9 +2,9 @@ from collections import Counter
 from collections import defaultdict  # import defaultdict class
 
 
-###########
-# COUNTER #
-###########
+#####################
+# COUNTER IN PYTHON #
+#####################
 marriage_ages = [22, 22, 25, 25, 30, 24, 26, 24, 35]  # create a list
 value_counts = Counter(marriage_ages)  # apply the counter functionality
 print(value_counts.most_common())
@@ -198,3 +198,4 @@ letters, numbers = zip(*pairs)  # break into two lists
 
 print(letters)  # print the first values of the tuples
 print(numbers)  # print the second values of the tuples
+
