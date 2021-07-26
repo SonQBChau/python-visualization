@@ -153,3 +153,17 @@ def age_check(age):
         print("Other")
 
 print(age_check(41))
+
+#####################
+# THE FOR CONSTRUCT #
+#####################
+names = ['tyler', 'karen', 'jill']   # list containing names
+
+for i, name in enumerate(names):     # iterating over names
+    print("Index: {0}".format(i))    # printing index number
+    print("Value: {0}".format(name)) # print the value at the index
+
+# list comprehensions
+numbers_gt_5 = [x for x in range(1,15) if x > 5]  # loop over the range and only keep the value if greater than 5
+print(numbers_gt_5)
+
