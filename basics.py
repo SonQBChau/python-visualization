@@ -192,3 +192,9 @@ list_1 = [1, 2, 3]  # create your first list
 list_2 = ['x', 'y', 'z']  # create your second list
 
 print(list(zip(list_1, list_2)))  # combine and print
+
+pairs = [('x', 1), ('y', 2), ('z', 3)]  # a list of tuples
+letters, numbers = zip(*pairs)  # break into two lists
+
+print(letters)  # print the first values of the tuples
+print(numbers)  # print the second values of the tuples
