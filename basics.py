@@ -167,3 +167,5 @@ for i, name in enumerate(names):     # iterating over names
 numbers_gt_5 = [x for x in range(1,15) if x > 5]  # loop over the range and only keep the value if greater than 5
 print(numbers_gt_5)
 
+nums_plus_one = [x + 1 for x in range(5)] # increment every value in a list by 1
+print(nums_plus_one)
