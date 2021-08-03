@@ -25,3 +25,22 @@ standard_data = standard.fit_transform(data)
 print("After Standard scaling")
 print(np.mean(standard_data, 0))
 print(np.std(standard_data, 0))
+
+###################
+# MIN/MAX SCALING #
+###################
+# Create matrix of data
+data = [[-1, 2], 
+        [-0.5, 6], 
+        [0, 10], 
+        [1, 18]]
+
+# Initalize MinMaxScaler
+min_max = MinMaxScaler()
+# Fit and transform the data
+min_max_data = min_max.fit_transform(data)
+
+print(np.min(min_max_data, 0))
+print(np.max(min_max_data, 0))
+print(np.mean(min_max_data, 0))
+print(np.std(min_max_data, 0))
