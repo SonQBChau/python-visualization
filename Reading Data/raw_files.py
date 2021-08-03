@@ -10,13 +10,13 @@ tmp = tempfile.NamedTemporaryFile()
 
 # Read in the data from our file, line by line
 # with open(tmp.name, "r") as f:
-with open('tmp.name', "r") as f:
+with open('./data/tmp.name', "r") as f:
     for line in f:
       print(line)
       
       
 first_values = []  # Define a list to store the first values of each row
-with open('tmp.name', "r") as f:  # Open the file to read
+with open('./data/tmp.name', "r") as f:  # Open the file to read
     for line in f:  # Loop over each line
       row_values = line.split("|")  # Split each line by the | character into a list
       first_values.append(row_values[0])  # Add the first value to our list

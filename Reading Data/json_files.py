@@ -32,7 +32,7 @@ json_data = json.loads(json_string)
 print(json_data)
 
 # JSON in a file, you read the data using the load() function
-with open('data.json') as f:
+with open('./data/data.json') as f:
     data = json.load(f)
 
 print(data)

@@ -6,6 +6,6 @@ names = ['age', 'workclass', 'fnlwgt', 'education', 'educationnum', 'maritalstat
 
 # CSV doesn’t have column names, names should be and supplied
 # Read in the CSV file from the webpage using the defined column names
-df = pd.read_csv("adult.data", header=None, names=names)
+df = pd.read_csv("./data/adult.data", header=None, names=names)
                       
 print(df.head())
