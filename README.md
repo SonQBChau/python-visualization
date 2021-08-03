@@ -11,4 +11,32 @@
 3. Open a new powershell to active (.venv)
 ![Screenshot 2021-08-02 223550](https://user-images.githubusercontent.com/12553570/127954067-3eb5808a-74c8-4e74-b347-4695f3984acc.png)
 
-4. Start pip install
+4. Install packages:
+
+    ``` pip install scipy```
+
+## FOR MAC
+Use conda since pip scipy not working (yet) with Mac M1
+
+*Note:* By default, conda creates a central virtual env unlike like venv. 
+Since I prefer the current location I will specific the path.
+
+1. To create virtual environment at the current location
+
+    ```conda create --prefix ./envs```
+
+    *Optional:* step 1 and 4 together:
+
+    ```conda create --prefix ./envs scipy```
+
+2. Restart the Terminal to take effect
+
+    ```conda init zsh```
+
+3. To activate virtual environment
+
+    ```conda activate ./envs```
+
+4. Install packages:
+
+    ```conda install scipy```
