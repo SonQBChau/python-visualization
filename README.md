@@ -16,10 +16,10 @@
     ``` pip install scipy```
 
 ## FOR MAC
-Use conda since pip scipy is not working (yet) with Mac M1
+Use conda since pip scipy is not working (yet) with Mac M1.
 
-*Note:* By default, conda creates a central virtual env unlike like venv. 
-Since I prefer the current location I will specific the path.
+*Note:* By default, conda creates virtual envs at a central location unlike venv. 
+Since I prefer the current location installation I will specific the path.
 
 1. To create virtual environment at the current location
 
