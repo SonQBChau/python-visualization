@@ -28,3 +28,10 @@ print(train_df.groupby('relationship')['label'].value_counts(normalize=True))
 # Federal government workers work more than local workers on average. 
 # Never-worked average about 28 hours
 print(train_df.groupby(['workclass'])['hoursperweek'].mean())
+
+# Finding the correlation
+# there is a higher correlation between “hours per week” and “education num”
+print(train_df.corr())
+# Convert the string label into a value of 1 when >= 50k and 0 otherwise
+train_df['label_int'] = train_df.label.apply(lambda x: ">" in x)
+print(train_df.corr())
