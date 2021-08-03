@@ -3,22 +3,31 @@ import pandas as pd
 names = ['age', 'workclass', 'fnlwgt', 'education', 'educationnum', 'maritalstatus', 'occupation', 'relationship', 'race',
         'sex', 'capitalgain', 'capitalloss', 'hoursperweek', 'nativecountry', 'label']
 train_df = pd.read_csv("./data/adult.data", header=None, names=names)
-
-# GATHERING STATISTICS ON DATA 
+################################
+# GATHERING STATISTICS ON DATA #
+################################
 print(train_df.describe())
 
-# FINDING THE DATA TYPES
+##########################
+# FINDING THE DATA TYPES #
+##########################
 print(train_df.info())  # Use the info() function on the dataframe
 
-# CONVERTING DATA TYPES
+#########################
+# CONVERTING DATA TYPES #
+#########################
 train_df['numeric_column'] = pd.to_numeric(train_df['age'])
 print(train_df.head())
 
-# FINDING UNIQUE VALUES
+#########################
+# FINDING UNIQUE VALUES #
+#########################
 print(train_df['relationship'].unique())
 print(train_df['relationship'].value_counts())
 
-# GROUPING THE DATA
+#####################
+# GROUPING THE DATA #
+#####################
 # This function takes a list of columns by which you would like to group your dataframe. 
 # It then performs the requested calculations on each group individually and returns the results by group      
 # Group by relationship and then get the value counts of label with normalization             
@@ -30,7 +39,9 @@ print(train_df.groupby('relationship')['label'].value_counts(normalize=True))
 # Never-worked average about 28 hours
 print(train_df.groupby(['workclass'])['hoursperweek'].mean())
 
-# FINDING THE CORRELATION
+###########################
+# FINDING THE CORRELATION #
+###########################
 # there is a higher correlation between “hours per week” and “education num”
 print(train_df.corr())
 # Convert the string label into a value of 1 when >= 50k and 0 otherwise
