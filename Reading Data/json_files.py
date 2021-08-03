@@ -26,6 +26,13 @@ json_string = """{
 
 
 # Read the JSON data into Python
+# JSON data are in a string, you can use the loads() function to read it into a Python dictionary
 json_data = json.loads(json_string)
 
 print(json_data)
+
+# JSON in a file, you read the data using the load() function
+with open('data.json') as f:
+    data = json.load(f)
+
+print(data)
