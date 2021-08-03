@@ -27,7 +27,9 @@ def unpivot(frame):
 df = unpivot(tm.makeTimeDataFrame())
 print(df.head())
 
-# Long to wide format
-# Use pivot to keep date as the index and value as the values, but use the vaiable column to create new columns
+# Convert to wide format
 df_pivot = df.pivot(index='date', columns='variable', values='value')
 print(df_pivot.head())
+
+# Convert back to long format
+print(df_pivot.unstack().head())
