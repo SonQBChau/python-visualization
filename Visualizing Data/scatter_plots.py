@@ -8,8 +8,10 @@ sns.set(style='ticks', palette='Set2')
 # Load data as explained in introductory lesson
 boston_data = load_boston()
 boston_df = pd.DataFrame(boston_data.data, columns=boston_data.feature_names)
+print(boston_df.head())
 
 # Create the scatter plot
 sns.lmplot(x="CRIM", y="NOX", data=boston_df)
 # Remove excess chart lines and ticks for a nicer looking plot
 sns.despine()
+plt.show()
