@@ -14,3 +14,15 @@ sns.distplot(boston_df.NOX, kde=False)
 # Remove excess chart lines and ticks for a nicer looking plot
 sns.despine()
 plt.show()
+
+# Create the histogram plot but with 100 bin
+sns.distplot(boston_df.NOX, bins=100, kde=False)
+# Remove excess chart lines and ticks for a nicer looking plot
+sns.despine()
+plt.show()
+
+# Create the histogram plot
+sns.distplot(boston_df.NOX, kde=True)
+# Remove excess chart lines and ticks for a nicer looking plot
+sns.despine()
+plt.show()
