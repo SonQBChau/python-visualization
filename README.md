@@ -1,4 +1,4 @@
-# SET UP PYTHON ENVIRONMENT FOR VSCODE
+# HOW TO SET UP PYTHON ENVIRONMENT FOR VSCODE
 ## FOR WINDOWS
 
 1. To create virtual environment at the current location:
