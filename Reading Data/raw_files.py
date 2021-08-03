@@ -9,6 +9,7 @@ tmp = tempfile.NamedTemporaryFile()
 #     f.write("Mindy|25|F")
 
 # Read in the data from our file, line by line
+# with open(tmp.name, "r") as f:
 with open('tmp.name', "r") as f:
     for line in f:
       print(line)
