@@ -9,8 +9,8 @@ sns.set(style='ticks', palette='Set2')
 boston_data = load_boston()
 boston_df = pd.DataFrame(boston_data.data, columns=boston_data.feature_names)
 
-# Create the box plot
-sns.boxplot(boston_df.NOX)
+# Create the violin plot
+sns.violinplot(boston_df['INDUS'], orient="v")
 # Remove excess chart lines and ticks for a nicer looking plot
 sns.despine()
 plt.show()
