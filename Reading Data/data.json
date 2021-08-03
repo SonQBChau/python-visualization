@@ -1,7 +1,4 @@
-import json
-
-## Define the JSON object as a string
-json_string = """{
+{
     "glossary": {
         "title": "example glossary",
         "GlossDiv": {
@@ -22,10 +19,4 @@ json_string = """{
             }
         }
     }
-}"""
-
-
-# Read the JSON data into Python
-json_data = json.loads(json_string)
-
-print(json_data)
+}
