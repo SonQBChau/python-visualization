@@ -21,7 +21,7 @@ Use conda since pip scipy is not working (yet) with Mac M1.
 *Note:* By default, conda creates virtual envs at a central location unlike venv. 
 Since I prefer the current location installation I will specific the path.
 
-1. To create virtual environment at the current location
+1. To create virtual environment at the current location:
 
     ```conda create --prefix ./envs```
 
@@ -29,11 +29,11 @@ Since I prefer the current location installation I will specific the path.
 
     ```conda create --prefix ./envs scipy```
 
-2. Restart the Terminal to take effect
+2. Restart the Terminal to take effect:
 
     ```conda init zsh```
 
-3. To activate virtual environment
+3. To activate virtual environment:
 
     ```conda activate ./envs```
 
